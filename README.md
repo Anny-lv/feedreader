@@ -5,7 +5,7 @@ A web-based application that reads RSS feeds and allows users to read them with 
 
 ## Table of Contents
 
-* [How_To_Run](#running)
+* [How To Run](#running)
 * [Main_Functions](#main)
 * [Dependencies](#dependencies)
 * [Contributing](#contributing)
