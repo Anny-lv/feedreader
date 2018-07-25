@@ -14,8 +14,8 @@ A web-based application that reads RSS feeds and allows users to read them with 
 Downolad all files from https://github.com/wannillasky/feedreader. Go into the src Directory and load the index.html file in chrome.
 
 ## Main Functions
-
 ###loadFeed()
+
 The loadFeed function loads feeds from a selected source from the allFeeds array, namely the id parameter, like so: loadFeed(0). The function cd parameter is a callback function that will be executed once the function completes its task.
 
 ## Dependencies
