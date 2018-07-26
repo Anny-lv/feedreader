@@ -82,7 +82,7 @@ describe('Initial Entries', function() {
          * a single .entry element within the .feed container.
          */
         it('there is at least a single entry element within the feed container', function() {
-            expect($('.entry').length).toBeGreaterThan(0);
+            expect($('.feed').find('.entry').length).toBeGreaterThan(0);
         });
 });
 
