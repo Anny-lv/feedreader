@@ -94,16 +94,24 @@ describe('New Feed Selection', function() {
          * by the loadFeed function that the content actually changes.
          */
 
+let prevFeed;
+let newFeed;
+
 //beforeEach allows to do async test. used to ensure that feeds are loaded before they are tested
-         beforeEach(function(done) {
-            loadFeed(0, function() {
-            feedOne = $('.feed').html();
-            done();
-            });
-        });
+beforeEach(function(done){
+    loadFeed(0, function(){
+        // feed 0 done loading
+        prevFeed = $('.feed').html();
+        loadFeed(1, function(){
+            // feed 1 done loading
+           newFeed = $('.feed').html();
+           // all variables initialised, can begin tests
+        done();
+       });
+   });
 
         it('feed content is changed after loading feed', function(done) {
-            expect(after).not.toEqual(initial);
+            expect(prevUrl).not.toEqual(newUrl);
         });
-    });
+});
 }());
