@@ -111,7 +111,7 @@ beforeEach(function(done){
    });
 
         it('feed content is changed after loading feed', function(done) {
-            expect(prevUrl).not.toEqual(newUrl);
+            expect(prevFeed).not.toEqual(newFeed);
         });
 });
 }());
